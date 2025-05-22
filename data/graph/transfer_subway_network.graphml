@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d2" for="edge" attr.name="weight" attr.type="long" />
+  <key id="d1" for="node" attr.name="y" attr.type="float" />
+  <key id="d0" for="node" attr.name="x" attr.type="float" />
+  <graph edgedefault="undirected">
+    <node id="(1,소요산)">
+      <data key="d0">0.31779766639362955</data>
+      <data key="d1">-0.720523055294432</data>
+    </node>
+    <node id="(1,창동)">
+      <data key="d0">0.24143573753179287</data>
+      <data key="d1">-0.32049458615816245</data>
+    </node>
+    <node id="(1,동대문)">
+      <data key="d0">0.12471913767921453</data>
+      <data key="d1">-0.09814430640086315</data>
+    </node>
+    <node id="(1,종로3가)">
+      <data key="d0">0.09460196424671247</data>
+      <data key="d1">-0.04414613587385397</data>
+    </node>
+    <node id="(1,시청)">
+      <data key="d0">0.06980056223883045</data>
+      <data key="d1">0.007280517119779425</data>
+    </node>
+    <node id="(1,서울역)">
+      <data key="d0">0.0879157824187292</data>
+      <data key="d1">0.02408570080241402</data>
+    </node>
+    <node id="(1,신길)">
+      <data key="d0">0.10142587287581425</data>
+      <data key="d1">0.14968052347593552</data>
+    </node>
+    <node id="(1,신도림)">
+      <data key="d0">0.10152933624552388</data>
+      <data key="d1">0.20030741895740742</data>
+    </node>
+    <node id="(1,금정)">
+      <data key="d0">-0.3319504774996447</data>
+      <data key="d1">0.3131057858908255</data>
+    </node>
+    <node id="(1,서동탄)">
+      <data key="d0">-0.49638676693963585</data>
+      <data key="d1">1.0</data>
+    </node>
+    <node id="(2,시청)">
+      <data key="d0">0.044709652517400986</data>
+      <data key="d1">0.00018344905676988857</data>
+    </node>
+    <node id="(2,을지로3가)">
+      <data key="d0">0.02692113751265359</data>
+      <data key="d1">-0.0610210530490782</data>
+    </node>
+    <node id="(2,을지로4가)">
+      <data key="d0">0.032506594933103046</data>
+      <data key="d1">-0.0888733784823745</data>
+    </node>
+    <node id="(2,동대문역사문화공원)">
+      <data key="d0">0.04632421228788693</data>
+      <data key="d1">-0.11473229665742936</data>
+    </node>
+    <node id="(2,왕십리)">
+      <data key="d0">0.009771256885314447</data>
+      <data key="d1">-0.18010405393812437</data>
+    </node>
+    <node id="(2,교대)">
+      <data key="d0">-0.1999529920154907</data>
+      <data key="d1">0.02953926298565059</data>
+    </node>
+    <node id="(2,사당)">
+      <data key="d0">-0.15763796556645915</data>
+      <data key="d1">0.09558760147942719</data>
+    </node>
+    <node id="(2,신도림)">
+      <data key="d0">0.08304302154613469</data>
+      <data key="d1">0.2172971371493463</data>
+    </node>
+    <node id="(2,영등포구청)">
+      <data key="d0">0.03682091382793422</data>
+      <data key="d1">0.20920111534944433</data>
+    </node>
+    <node id="(2,충정로)">
+      <data key="d0">0.02719330974896462</data>
+      <data key="d1">0.01746770082013891</data>
+    </node>
+    <node id="(3,대화)">
+      <data key="d0">0.6009158609348543</data>
+      <data key="d1">0.0184880481413502</data>
+    </node>
+    <node id="(3,종로3가)">
+      <data key="d0">0.07118653262174811</data>
+      <data key="d1">-0.04175208165303723</data>
+    </node>
+    <node id="(3,을지로3가)">
+      <data key="d0">0.04907228960734563</data>
+      <data key="d1">-0.05440926423100252</data>
+    </node>
+    <node id="(3,충무로)">
+      <data key="d0">0.0677694664395254</data>
+      <data key="d1">-0.07420616580334445</data>
+    </node>
+    <node id="(3,교대)">
+      <data key="d0">-0.19873463893349977</data>
+      <data key="d1">0.00532204956710549</data>
+    </node>
+    <node id="(3,오금)">
+      <data key="d0">-0.4405708232382208</data>
+      <data key="d1">-0.20843693329178944</data>
+    </node>
+    <node id="(4,진접)">
+      <data key="d0">0.38434420207113223</data>
+      <data key="d1">-0.35386458605212845</data>
+    </node>
+    <node id="(4,창동)">
+      <data key="d0">0.24279030419277287</data>
+      <data key="d1">-0.2968084225390331</data>
+    </node>
+    <node id="(4,동대문)">
+      <data key="d0">0.1058475852765136</data>
+      <data key="d1">-0.11894196692258988</data>
+    </node>
+    <node id="(4,동대문역사문화공원)">
+      <data key="d0">0.07939959312920968</data>
+      <data key="d1">-0.11477077951454835</data>
+    </node>
+    <node id="(4,충무로)">
+      <data key="d0">0.08838525270448953</data>
+      <data key="d1">-0.08961097156874992</data>
+    </node>
+    <node id="(4,서울역)">
+      <data key="d0">0.10911553862167374</data>
+      <data key="d1">0.012883154177339868</data>
+    </node>
+    <node id="(4,사당)">
+      <data key="d0">-0.13501308756907635</data>
+      <data key="d1">0.09967562479381513</data>
+    </node>
+    <node id="(4,금정)">
+      <data key="d0">-0.32220333245407395</data>
+      <data key="d1">0.29170912117766284</data>
+    </node>
+    <node id="(4,오이도)">
+      <data key="d0">-0.6168223438630079</data>
+      <data key="d1">0.4275676941960605</data>
+    </node>
+    <node id="(5,방화)">
+      <data key="d0">0.28038017426207223</data>
+      <data key="d1">0.47362460909098464</data>
+    </node>
+    <node id="(5,영등포구청)">
+      <data key="d0">0.03726668621610876</data>
+      <data key="d1">0.18729079595514178</data>
+    </node>
+    <node id="(5,신길)">
+      <data key="d0">0.07792270576904353</data>
+      <data key="d1">0.15402743140452332</data>
+    </node>
+    <node id="(5,충정로)">
+      <data key="d0">0.00612975455028436</data>
+      <data key="d1">0.011464325910426511</data>
+    </node>
+    <node id="(5,종로3가)">
+      <data key="d0">0.07669843818668896</data>
+      <data key="d1">-0.060748887876573364</data>
+    </node>
+    <node id="(5,을지로4가)">
+      <data key="d0">0.0561289414115506</data>
+      <data key="d1">-0.08482197694510163</data>
+    </node>
+    <node id="(5,동대문역사문화공원)">
+      <data key="d0">0.06189714736010591</data>
+      <data key="d1">-0.11211465386194164</data>
+    </node>
+    <node id="(5,왕십리)">
+      <data key="d0">-0.010326501287135982</data>
+      <data key="d1">-0.19073745120602764</data>
+    </node>
+    <node id="(5,오금)">
+      <data key="d0">-0.4404798917792192</data>
+      <data key="d1">-0.23211617050635627</data>
+    </node>
+    <node id="(5,마천)">
+      <data key="d0">-0.4916878110992941</data>
+      <data key="d1">-0.2844098896750071</data>
+    </node>
+    <edge source="(1,소요산)" target="(1,창동)">
+      <data key="d2">32</data>
+    </edge>
+    <edge source="(1,창동)" target="(1,동대문)">
+      <data key="d2">24</data>
+    </edge>
+    <edge source="(1,창동)" target="(4,창동)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(1,동대문)" target="(1,종로3가)">
+      <data key="d2">4</data>
+    </edge>
+    <edge source="(1,동대문)" target="(4,동대문)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(1,종로3가)" target="(1,시청)">
+      <data key="d2">4</data>
+    </edge>
+    <edge source="(1,종로3가)" target="(3,종로3가)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(1,종로3가)" target="(5,종로3가)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(1,시청)" target="(1,서울역)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(1,시청)" target="(2,시청)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(1,서울역)" target="(1,신길)">
+      <data key="d2">10</data>
+    </edge>
+    <edge source="(1,서울역)" target="(4,서울역)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(1,신길)" target="(1,신도림)">
+      <data key="d2">4</data>
+    </edge>
+    <edge source="(1,신길)" target="(5,신길)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(1,신도림)" target="(1,금정)">
+      <data key="d2">60</data>
+    </edge>
+    <edge source="(1,신도림)" target="(2,신도림)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(1,금정)" target="(1,서동탄)">
+      <data key="d2">54</data>
+    </edge>
+    <edge source="(1,금정)" target="(4,금정)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,시청)" target="(2,을지로3가)">
+      <data key="d2">4</data>
+    </edge>
+    <edge source="(2,시청)" target="(2,충정로)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,시청)" target="(2,시청)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,을지로3가)" target="(2,을지로4가)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,을지로3가)" target="(3,을지로3가)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,을지로4가)" target="(2,동대문역사문화공원)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,을지로4가)" target="(5,을지로4가)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,동대문역사문화공원)" target="(2,왕십리)">
+      <data key="d2">6</data>
+    </edge>
+    <edge source="(2,동대문역사문화공원)" target="(4,동대문역사문화공원)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,동대문역사문화공원)" target="(5,동대문역사문화공원)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,왕십리)" target="(2,교대)">
+      <data key="d2">30</data>
+    </edge>
+    <edge source="(2,왕십리)" target="(5,왕십리)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,교대)" target="(2,사당)">
+      <data key="d2">6</data>
+    </edge>
+    <edge source="(2,교대)" target="(3,교대)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,사당)" target="(2,신도림)">
+      <data key="d2">16</data>
+    </edge>
+    <edge source="(2,사당)" target="(4,사당)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,신도림)" target="(2,영등포구청)">
+      <data key="d2">4</data>
+    </edge>
+    <edge source="(2,영등포구청)" target="(2,충정로)">
+      <data key="d2">14</data>
+    </edge>
+    <edge source="(2,영등포구청)" target="(5,영등포구청)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(2,충정로)" target="(5,충정로)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(3,대화)" target="(3,종로3가)">
+      <data key="d2">38</data>
+    </edge>
+    <edge source="(3,종로3가)" target="(3,을지로3가)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(3,종로3가)" target="(5,종로3가)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(3,을지로3가)" target="(3,충무로)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(3,충무로)" target="(3,교대)">
+      <data key="d2">18</data>
+    </edge>
+    <edge source="(3,충무로)" target="(4,충무로)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(3,교대)" target="(3,오금)">
+      <data key="d2">24</data>
+    </edge>
+    <edge source="(3,오금)" target="(5,오금)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(4,진접)" target="(4,창동)">
+      <data key="d2">12</data>
+    </edge>
+    <edge source="(4,창동)" target="(4,동대문)">
+      <data key="d2">18</data>
+    </edge>
+    <edge source="(4,동대문)" target="(4,동대문역사문화공원)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(4,동대문역사문화공원)" target="(4,충무로)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(4,동대문역사문화공원)" target="(5,동대문역사문화공원)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(4,충무로)" target="(4,서울역)">
+      <data key="d2">6</data>
+    </edge>
+    <edge source="(4,서울역)" target="(4,사당)">
+      <data key="d2">14</data>
+    </edge>
+    <edge source="(4,사당)" target="(4,금정)">
+      <data key="d2">20</data>
+    </edge>
+    <edge source="(4,금정)" target="(4,오이도)">
+      <data key="d2">26</data>
+    </edge>
+    <edge source="(5,방화)" target="(5,영등포구청)">
+      <data key="d2">26</data>
+    </edge>
+    <edge source="(5,영등포구청)" target="(5,신길)">
+      <data key="d2">4</data>
+    </edge>
+    <edge source="(5,신길)" target="(5,충정로)">
+      <data key="d2">12</data>
+    </edge>
+    <edge source="(5,충정로)" target="(5,종로3가)">
+      <data key="d2">6</data>
+    </edge>
+    <edge source="(5,종로3가)" target="(5,을지로4가)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(5,을지로4가)" target="(5,동대문역사문화공원)">
+      <data key="d2">2</data>
+    </edge>
+    <edge source="(5,동대문역사문화공원)" target="(5,왕십리)">
+      <data key="d2">8</data>
+    </edge>
+    <edge source="(5,왕십리)" target="(5,오금)">
+      <data key="d2">34</data>
+    </edge>
+    <edge source="(5,오금)" target="(5,마천)">
+      <data key="d2">6</data>
+    </edge>
+  </graph>
+</graphml>
