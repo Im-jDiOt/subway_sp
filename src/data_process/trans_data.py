@@ -24,32 +24,53 @@ def build_station_lines():
     return station_lines
 
 
+# 네트워크 그래프 생성 함수
 def build_transit_graph(station_lines):
     G_t = nx.Graph()
 
-    # 각 호선별로 모든 역에 대한 노드 추가 및 인접 역 간 간선 연결
+    # 각 호선별 환승역 및 시종점 인덱스 수집
+    line_transfer_idx = {}
     for line, station_str in lines.items():
         stations = [s.strip() for s in station_str.split('-')]
 
-        # 모든 역을 노드로 추가
-        for station in stations:
-            node_name = f"({line},{station})"
-            G_t.add_node(node_name)
+        # 환승역과 시종점 찾기
+        indices = []
+        for idx, station in enumerate(stations):
+            if len(station_lines[station]) > 1 or idx == 0 or idx == len(stations) - 1:
+                indices.append((idx, station))
 
-        # 인접한 역 사이에 간선 추가 (가중치 1)
-        for i in range(len(stations) - 1):
-            u = f"({line},{stations[i]})"
-            v = f"({line},{stations[i + 1]})"
-            G_t.add_edge(u, v, weight=2)
+        # 중복 제거하면서 원래 순서 유지
+        line_transfer_idx[line] = list(dict.fromkeys(indices)) #{line: [(idx, station), ...]}
 
-    # 환승역 간 간선 추가 (호선 간 연결, 가중치 2)
+    # 1. 동일 호선 내 환승역 간 간선 추가
+    for line, items in line_transfer_idx.items():
+        items.sort(key=lambda x: x[0])
+        for i in range(len(items) - 1):
+            idx1, station1 = items[i]
+            idx2, station2 = items[i + 1]
+
+            weight = 2 * (idx2 - idx1)
+            u = f"({line},{station1})"
+            v = f"({line},{station2})"
+
+            # add_nodes_from으로 한 번에 노드 추가
+            G_t.add_nodes_from([u, v])
+            G_t.add_edge(u, v, weight=weight)
+
+    # 2. 환승역 간 간선 추가 (호선 간 연결)
     for station, lines_list in station_lines.items():
         if len(lines_list) > 1:
-            transfer_nodes = [f"({line},{station})" for line in lines_list]
-            for u, v in combinations(transfer_nodes, 2):
-                G_t.add_edge(u, v, weight=2)
+            # 실제 그래프에 존재하는 노드만 필터링
+            transfer_nodes = [f"({line},{station})" for line in lines_list
+                              if f"({line},{station})" in G_t.nodes]
+
+            # 모든 환승노드 쌍에 간선 추가
+            if len(transfer_nodes) > 1:
+                G_t.add_edges_from([(u, v, {'weight': 2})
+                                    for u, v in combinations(transfer_nodes, 2)])
 
     return G_t
+
 
 # 네트워크 시각화 함수
 def visualize_network(G):
@@ -78,5 +99,7 @@ def visualize_network(G):
 # 메인 실행 로직
 station_lines = build_station_lines()
 G_t = build_transit_graph(station_lines)
+print(G_t.nodes())
+print(len(G_t.edges()))
 visualize_network(G_t)
-nx.write_graphml(G_t, "data/graph/all_subway_network.graphml")
+# nx.write_graphml(G_t, "../../data/graph/transfer_subway_network.graphml")

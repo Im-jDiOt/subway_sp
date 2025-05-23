@@ -5,16 +5,20 @@ import random
 import math
 from collections import defaultdict
 
+# TODO 필요시 graphml 파일을 불러와서 하는 게 아니라 과제에서 주어진 정보에서 시작할 수 있도록 수정
 G = nx.read_graphml(r'C:\Users\USER\PycharmProjects\dsa_team_proj\data\graph\all_subway_network.graphml')
 TG = nx.read_graphml(r'C:\Users\USER\PycharmProjects\dsa_team_proj\data\graph\transfer_subway_network.graphml')
 transfer_nodes = set(TG.nodes())
 
 # Reconstruct necessary precomputations quickly (abbreviated)
 
+# TODO jupyter 수정본으로 수정할 것
 lines = defaultdict(list)
 for u, v, data in G.edges(data=True):
     line = data.get('line')
     if line: lines[line].append((u,v))
+
+#TODO 이거 없어도 되는 거 아님??
 def order_line_stations(edges):
     adj = defaultdict(list)
     for u,v in edges:
@@ -29,17 +33,18 @@ def order_line_stations(edges):
     return seq
 line_sequences = {ln: order_line_stations(ed) for ln,ed in lines.items()}
 
-TG2 = nx.Graph()
-for seq in line_sequences.values():
-    last_t,dist=None,0
-    for st in seq:
-        if st in transfer_nodes:
-            if last_t: TG2.add_edge(last_t,st,weight=dist)
-            else: TG2.add_node(st)
-            last_t,dist=st,0
-        dist+=1
-dist_transfers = dict(nx.all_pairs_dijkstra_path_length(TG2, weight='weight'))
-path_transfers = dict(nx.all_pairs_dijkstra_path(TG2, weight='weight'))
+# TG2 = nx.Graph()
+# for seq in line_sequences.values():
+#     last_t,dist=None,0
+#     for st in seq:
+#         if st in transfer_nodes:
+#             if last_t: TG2.add_edge(last_t,st,weight=dist)
+#             else: TG2.add_node(st)
+#             last_t,dist=st,0
+#         dist+=1
+
+dist_transfers = dict(nx.all_pairs_dijkstra_path_length(TG, weight='weight'))
+path_transfers = dict(nx.all_pairs_dijkstra_path(TG, weight='weight'))
 
 station_to_transfers = {n:[] for n in G.nodes()}
 station_lines = defaultdict(list)
@@ -62,13 +67,14 @@ def bfs_path(pair):
     return nx.shortest_path(G, pair[0], pair[1])
 
 def two_layer_path(s, t):
-    if s == t: return [s]
-    common = set(station_lines[s]) & set(station_lines[t])
-    if common:
-        ln = next(iter(common)); seq=line_sequences[ln]
-        i_s, i_t = seq.index(s), seq.index(t)
-        step = 1 if i_t>i_s else -1
-        return seq[i_s:i_t+step:step]
+    if s == t: return [s] # 동일역
+    # 동일 호선이면 해당 호선으로 직행이 가장 빠르다고 가정하는데, 아닐 거 같음. 보류.
+    # common = set(station_lines[s]) & set(station_lines[t])
+    # if common:
+    #     ln = next(iter(common)); seq=line_sequences[ln]
+    #     i_s, i_t = seq.index(s), seq.index(t)
+    #     step = 1 if i_t>i_s else -1
+    #     return seq[i_s:i_t+step:step]
     best, bp = math.inf, None
     for x, dx in station_to_transfers.get(s,[]):
         for y, dy in station_to_transfers.get(t,[]):
