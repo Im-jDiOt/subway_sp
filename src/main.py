@@ -46,6 +46,7 @@ line_sequences = {ln: order_line_stations(ed) for ln,ed in lines.items()}
 dist_transfers = dict(nx.all_pairs_dijkstra_path_length(TG, weight='weight'))
 path_transfers = dict(nx.all_pairs_dijkstra_path(TG, weight='weight'))
 
+# 인접 환승역 골라내는 부분 -> 이제 이거 개깔끔하게 구할 수 있음.
 station_to_transfers = {n:[] for n in G.nodes()}
 station_lines = defaultdict(list)
 for ln,seq in line_sequences.items():
